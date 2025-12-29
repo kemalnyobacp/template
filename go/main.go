@@ -18,6 +18,7 @@ var (
 
 func Run() {
 	Println("0")
+
 }
 
 func Solve() {
