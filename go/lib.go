@@ -2,7 +2,6 @@ package main
 
 import (
 	"cmp"
-	"fmt"
 	"slices"
 	"sort"
 )
@@ -666,16 +665,4 @@ func BinarySearch[T Integer](low, high T, check func(T) bool) T {
 		}
 	}
 	return low
-}
-
-func Print(a ...any) {
-	fmt.Fprint(out, a...)
-}
-
-func Println(a ...any) {
-	fmt.Fprintln(out, a...)
-}
-
-func Scan(a ...any) {
-	fmt.Fscan(in, a...)
 }

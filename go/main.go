@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"runtime"
 	"runtime/debug"
@@ -26,6 +27,18 @@ func Solve() {
 		Run()
 		t--
 	}
+}
+
+func Print(a ...any) {
+	fmt.Fprint(out, a...)
+}
+
+func Println(a ...any) {
+	fmt.Fprintln(out, a...)
+}
+
+func Scan(a ...any) {
+	fmt.Fscan(in, a...)
 }
 
 func init() {
