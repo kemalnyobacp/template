@@ -11,9 +11,11 @@ import (
 var (
 	in      = bufio.NewReader(os.Stdin)
 	out     = bufio.NewWriter(os.Stdout)
+	err     = bufio.NewWriter(os.Stderr)
 	println = Println
 	scan    = Scan
 	print   = Print
+	log     = Log
 )
 
 func Run() {
@@ -40,6 +42,10 @@ func Println(a ...any) {
 
 func Scan(a ...any) {
 	fmt.Fscan(in, a...)
+}
+
+func Log(a ...any) {
+	fmt.Fprint(err, a...)
 }
 
 func init() {
