@@ -30,11 +30,11 @@ void solve() {
 }
 
 void readInputUsaco() {
-    freopen("shell.in", "r", stdin);
+    freopen(file_input, "r", stdin);
 }
 
 void writeOutputUsaco() {
-    freopen("shell.out", "w", stdout);
+    freopen(file_output, "w", stdout);
 }
 
 void runUsaco() {
