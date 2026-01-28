@@ -12,7 +12,7 @@
 #define debug3(x, y, z) cerr << #x << " = " << x << ", " << #y << " = " << y << ", " << #z << " = " << z << endl;
 #define file_input "shell.in"
 #define file_output "shell.out"
-#define usaco 1
+#define usaco 0
 
 using namespace std;
 
